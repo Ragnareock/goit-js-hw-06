@@ -1,5 +1,4 @@
 const textInput = document.getElementById('validation-input');
-textInput.addEventListener('blur', onInputBlur);
 
 function onInputBlur(event) {
     if (event.currentTarget.value.length === Number(textInput.dataset.length)) {
@@ -9,3 +8,5 @@ function onInputBlur(event) {
         textInput.classList = 'invalid';
     }
 }
+
+textInput.addEventListener('blur', onInputBlur);
