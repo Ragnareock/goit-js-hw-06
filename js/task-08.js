@@ -8,9 +8,15 @@ function onFormSubmit(event) {
     } = event.currentTarget;
 
     if (email.value === '' || password.value === '') {
-        return alert('All fields must be completed');
+        return alert('All fields must be filled');
     }
 
+    // const formData = {
+    //     email: email.value,
+    //     password: password.value,
+    // }
+    // console.log(formData);
+    
     console.log(`Email: ${email.value}, Password: ${password.value}`);
     event.currentTarget.reset();
 
