@@ -11,13 +11,12 @@ function onFormSubmit(event) {
         return alert('All fields must be filled');
     }
 
-    // const formData = {
-    //     email: email.value,
-    //     password: password.value,
-    // }
-    // console.log(formData);
+    const formData = {
+        email: email.value,
+        password: password.value,
+    }
+    console.log(formData);
     
-    console.log(`Email: ${email.value}, Password: ${password.value}`);
     event.currentTarget.reset();
 
 } 
